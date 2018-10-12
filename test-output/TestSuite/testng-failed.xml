@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="chromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.meganexus.tr.links_test.BrokenLinksTest">
+        <methods>
+          <include name="linkTest"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+        </methods>
+      </class> <!-- com.meganexus.tr.links_test.BrokenLinksTest -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test name="ieTest(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.meganexus.tr.links_test.BrokenLinksTest">
+        <methods>
+          <include name="linkTest"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+        </methods>
+      </class> <!-- com.meganexus.tr.links_test.BrokenLinksTest -->
+    </classes>
+  </test> <!-- ieTest(failed) -->
+  <test name="firefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.meganexus.tr.links_test.BrokenLinksTest">
+        <methods>
+          <include name="linkTest"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+        </methods>
+      </class> <!-- com.meganexus.tr.links_test.BrokenLinksTest -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+  <test name="edgeTest(failed)" parallel="tests">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.meganexus.tr.links_test.BrokenLinksTest">
+        <methods>
+          <include name="linkTest"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+          <include name="openBrowserAndApps"/>
+        </methods>
+      </class> <!-- com.meganexus.tr.links_test.BrokenLinksTest -->
+    </classes>
+  </test> <!-- edgeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
